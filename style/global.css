@@ -1,0 +1,65 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  background-color: #fff;
+  padding: auto;
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+  color: black;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: black;
+}
+
+button {
+  background-color: orange;
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 5px 0;
+}
+
+button:hover {
+  background-color: coral;
+}
+
+button:active {
+  background-color: #cc6200;
+}
+
+.sidebar {
+  width: 200px;
+  float: left;
+  background-color: #f0f0f0;
+  border-right: 1px solid #000;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.main-content {
+  margin-left: 210px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+table {
+  margin: auto;
+  text-align: center;
+}
