@@ -13,7 +13,7 @@ class QiskitInstaller {
         pipPath = path.join(venvPath, "bin", "pip");
       }
 
-      exec(`"${pipPath}" install qiskit`, (error, stdout, stderr) => {
+      exec(`"${pipPath}" install qiskit==1.4.2`, (error, stdout, stderr) => {
         if (error) {
           reject(error);
         } else {
