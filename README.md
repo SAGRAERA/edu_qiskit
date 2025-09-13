@@ -1,6 +1,6 @@
 # Automatic Qiskit Setup Tool for Education
 
-## 소개
+## Introduction
 
 'Automatic Qiskit Setup Tool for Education' is an automatic setup tool designed to help beginners who find installing Qiskit Challenging. It guides users through the steps of configuring the Python environment and installing Qiskit, making it easy for anyone to start learning quantum computing.
 
