@@ -1,113 +1,75 @@
-# Qiskit Environment Setup Tutorial
+# Automatic Qiskit Setup Tool for Education
 
-This project is an **Electron**-based desktop application that guides users through setting up a **Qiskit environment** and also provides a way to query **IBM Quantum API** information (e.g., usage, backends) using a token. It aims to help newcomers install and configure Qiskit and optionally explore quantum computing features through the IBM Quantum platform.
+## 소개
 
----
+'Automatic Qiskit Setup Tool for Education' is an automatic setup tool designed to help beginners who find installing Qiskit Challenging. It guides users through the steps of configuring the Python environment and installing Qiskit, making it easy for anyone to start learning quantum computing.
 
-## Table of Contents
+## Why is this tool needed?
 
-1. [Overview](#overview)
-2. [Key Features](#key-features)
-3. [Getting Started (Development Mode)](#getting-started-development-mode)
-4. [Building a Standalone Executable](#building-a-standalone-executable)
-5. [User API](#usage)
+- Many beginners face difficulties during Qiskit installation due to Python version conflicts and package dependency issues.
+- This tool automates the complex installation process, reducing the time required to set up an educational environment.
+- whith step-by-step guidance, users can both understand and complete the installation process smoothly.
 
----
+## Installation
 
-## Overview
+### Method 1: Use the executable file (easiest way)
 
-- **Goal**: Provide an easy-to-use tutorial for anyone wanting to install Python, set up a virtual environment, and install Qiskit. Additionally, show how to check IBM Quantum usage and device availability using an API token.
-- **Tech Stack**: [Electron](https://www.electronjs.org/), JavaScript (ES Modules), Node.js, Qiskit (Python).
+1. Download the latest 'Qiskit.Auto.Setup.for.Education.1.0.0.exe' file from [Releases page](https://github.com/SAGRAERA/Automatic-Qiskit-Setup-Tool/releases/tag/v1.0.0).
+2. Double-click the downloaded executable file.
+3. Follow the on-screen instructions to proceed with the setup.
 
----
+### Method 2: Run directly with Node.js
 
-## Key Features
+#### Prerequisites
 
-1. **Step-by-Step Tutorial**
-   - Guides you through checking Python installation, creating a virtual environment, installing Qiskit, and verifying VSCode setup.
-2. **IBM Quantum API Integration**
-   - Allows you to enter your IBM Quantum token and retrieve usage info, list backends, and check their statuses in real time.
-3. **Examples Section**
-   - Includes basic quantum information links, example code, and references to Qiskit usage (expandable with your own examples).
+- Node.js 18.0.0 or higher
+- npm or yarn
 
----
+#### installation & Run
 
-## Getting Started (Development Mode)
+```bash
+# Clone the repository
+git clone https://github.com/SAGRAERA/Automatic-Qiskit-Setup-Tool.git
+cd Automatic-Qiskit-Setup-Tool
 
-1. **Clone the repository** (or download the ZIP):
+# Install dependencies
+npm install
 
-   ```bash
-   git clone https://github.com/<your-account>/<your-repo>.git
-   cd <your-repo>
-
-   ```
-
-2. **Install dependencies**:
-
-   ```bash
-   npm install
-   ```
-
-3. **Run in development**:
-
-   ```bash
-   npm start
-   ```
-
-   This will launch the Electron app in development mode.
-
-   If needed, open DevTools via Ctrl+Shift+I (Windows/Linux) or Cmd+Option+I (macOS).
-
-## Building a Standalone Executable
-
-We recommend using electron-builder:
-
-1. **Install electron-builder** (if not already):
-
-   ```bash
-   npm install --save-dev electron-builder
-   ```
-
-2. **Add build script to your** package.json:
-
-   ```jsonc
-   {
-     "scripts": {
-       "start": "electron .",
-       "dist": "electron-builder"
-     },
-     "build": {
-       "directories": {
-         "output": "dist"
-       }
-       // ...
-     }
-   }
-   ```
-
-3. **Build**:
-   ```bash
-   npm run dist
-   ```
-
-- After building, check the dist/ folder for .exe (Windows), .dmg (Mac), or .AppImage (Linux).
+# Run the program
+npm start
+```
 
 ## Usage
 
-1. Launch the App
+1. When the program starts, it automatically checks the current system status.
+2. It verifies if Python is installed, and provides installation guidance if not.
+3. It helps create and activate a virtual environment.
+4. Qiskit and required packages are installed automatically.
+5. After installation, a verification step ensures everythin is working correctly.
 
-   - Either run npm start in dev mode or install via the built .exe/.dmg/.AppImage.
+## Key Features
 
-2. Follow the Tutorial
+- Automatic Python environment detection
+- Automatic virtual environment creation and management
+- Batch installation of Qiskit and related packages
+- Jupyter Notebook environment setup
+- Installation verification and testing
+- Step-by-step progress display
+- Troubleshooting guidance in case of errors
 
-   - The sidebar provides “Installation Tutorial” steps: Check Python, create a venv, install Qiskit, confirm VSCode, etc.
+## Troubleshooting
 
-3. Examples
+If issues occur during installation:
 
-   - Offers example quantum info links (or code) and any additional quantum circuit examples you add.
+1. Try the solutions suggested by the program first.
+2. Window Defender or antivirus software may block execution - temporarily disable them and retry.
+3. Running with administrator privileges may be required.
+4. If the issue persists, please report it in the [Issues](https://github.com/SAGRAERA/Automatic-Qiskit-Setup-Tool/issues) section.
 
-4. IBM Quantum API
+## License
 
-   - Enter your token in the “User API” section to fetch usage info, device statuses, and more.
+MIT License
 
-**Enjoy exploring quantum computing with Qiskit!**
+## Contributing
+
+Bug reports, feature suggestions, and pull requests are all welcome!
