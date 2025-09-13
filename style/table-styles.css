@@ -1,0 +1,180 @@
+/* Enhanced Table Styles */
+.info-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 1.5rem 0;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-table thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.info-table th {
+    padding: 1rem 1.25rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.info-table tbody tr {
+    transition: all 0.2s ease;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.info-table tbody tr:hover {
+    background-color: #f8f9ff;
+    transform: translateX(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.info-table td {
+    padding: 1rem 1.25rem;
+    color: #333;
+    font-size: 0.95rem;
+    vertical-align: middle;
+}
+
+.info-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+/* Backend Status Indicators */
+.backend-name {
+    font-weight: 600;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.backend-icon {
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status-badge {
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-badge.active {
+    background: #d4f8e8;
+    color: #00875a;
+}
+
+.status-badge.inactive {
+    background: #ffe4e1;
+    color: #de350b;
+}
+
+.status-badge.maintenance {
+    background: #fff3cd;
+    color: #856404;
+}
+
+/* Queue Information */
+.queue-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.queue-count {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 1rem;
+}
+
+.queue-time {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+/* Qubit Count */
+.qubit-count {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #667eea;
+    text-align: center;
+}
+
+/* Operational Status */
+.operational-status {
+    text-align: center;
+}
+
+.operational-yes {
+    color: #00875a;
+    font-size: 1.5rem;
+}
+
+.operational-no {
+    color: #de350b;
+    font-size: 1.5rem;
+}
+
+/* Job Table Specific */
+.job-id {
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    color: #6c757d;
+    word-break: break-all;
+    max-width: 200px;
+}
+
+.job-status {
+    padding: 0.35rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.job-status.completed {
+    background: #d4f8e8;
+    color: #00875a;
+}
+
+.job-status.running {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.job-status.queued {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.job-status.failed {
+    background: #ffe4e1;
+    color: #de350b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .info-table {
+        font-size: 0.9rem;
+    }
+    
+    .info-table th,
+    .info-table td {
+        padding: 0.75rem;
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "qiskit-auto-setup-for-education",
+  "version": "1.0.0",
+  "description": "Automatic Qiskit environment setup tool for education",
+  "author": "Dongmin Kim <moctras@gmail.com>",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^35.0.1",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.dominic.qiskit.autoedu",
+    "productName": "Qiskit Auto Setup for Education",
+    "win": {
+      "target": "portable"
+    },
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}
